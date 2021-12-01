@@ -7,7 +7,7 @@ const puppeteer = require ('puppeteer');
 
 
     const grabParagraph = await page.evaluate(() => {
-        const pgTag = document.querySelector(".css-1ivlz9a")    //inside parenthesis the css or any class element you need to scrape
+        const pgTag = document.querySelector(".css-1ivlz9a")    //inside parenthesis the css or any class element you want to scrape (make sure to add . to the beggining)
         return pgTag.innerHTML;                              // can change innerHTML to other functions
     });
 
